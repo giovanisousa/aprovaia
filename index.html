@@ -48,7 +48,7 @@
                 
                 <form action="https://formspree.io/f/xpqybkzq" method="POST" class="space-y-4">
                     
-                    <input type="hidden" name="_next" value="https://aprovaia.vercel.app/obrigado.html">
+                    
                     
                     <input type="text" name="_gotcha" style="display:none">
 
@@ -101,5 +101,31 @@
         <p class="text-sm mt-2">contato: suporte.aprovaia@gmail.com</p>
     </footer>
 
+    <script>
+        var form = document.querySelector("form");
+        
+        form.addEventListener("submit", function(event) {
+            event.preventDefault(); // Impede o Formspree de abrir a tela dele
+            
+            var data = new FormData(form);
+            
+            fetch(form.action, {
+                method: form.method,
+                body: data,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                if (response.ok) {
+                    // Força o redirecionamento pelo nosso site
+                    window.location.href = "https://aprovaia.vercel.app/obrigado.html";
+                } else {
+                    alert("Oops! Ocorreu um erro. Tente novamente.");
+                }
+            }).catch(error => {
+                alert("Erro na conexão. Verifique sua internet.");
+            });
+        });
+    </script>
 </body>
 </html>
