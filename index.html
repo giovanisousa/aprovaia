@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AprovaIA - Estude 5x Mais Rápido para Concursos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        aprovaia: {
+                            dark: '#0f172a',    // Slate 900
+                            primary: '#2563eb', // Blue 600
+                            accent: '#8b5cf6',  // Violet 500
+                            light: '#f8fafc'    // Slate 50
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-aprovaia-dark text-aprovaia-light font-sans antialiased">
+
+    <header class="relative overflow-hidden pt-16 pb-24 lg:pt-24 lg:pb-32">
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-6">
+                Sua Aprovação Não Exige 100 Horas de Videoaulas.<br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-aprovaia-primary to-aprovaia-accent">Exige Inteligência.</span>
+            </h1>
+            
+            <ul class="mt-4 max-w-2xl text-lg md:text-xl mx-auto text-gray-300 mb-10 space-y-2 font-medium">
+                <li>✅ Guias autossuficientes focados no que a banca cobra.</li>
+                <li>✅ Áudios otimizados para estudar no trânsito ou no treino.</li>
+                <li>✅ Feito com Inteligência Artificial para Concursos.</li>
+            </ul>
+
+            <div class="max-w-md mx-auto bg-white rounded-xl shadow-2xl overflow-hidden p-6 md:p-8 border-t-4 border-aprovaia-primary transform transition hover:scale-105 duration-300">
+                <h3 class="text-gray-900 text-2xl font-black mb-2 uppercase tracking-wide">Baixe seu Guia Gratuito</h3>
+                
+                <div class="flex items-center justify-center gap-4 mb-6 mt-4">
+                    <img src="capa_livro.jpeg" alt="Capa 3D Guia Constitucional" 
+                         class="w-24 h-24 rounded-lg shadow-md border border-gray-100 object-contain">
+                    <p class="text-gray-700 text-base font-semibold leading-snug">Receba o Guia de Direito Constitucional (Art. 5º ao 11) com tabelas e mapas mentais exclusivos.</p>
+                </div>
+                
+                <form action="https://formspree.io/f/xpqybkzq" method="POST" class="space-y-4">
+                    
+                    <input type="hidden" name="_next" value="/obrigado.html">
+                    
+                    <input type="text" name="_gotcha" style="display:none">
+
+                    <div>
+                        <label for="email" class="sr-only">Seu melhor e-mail</label>
+                        <input type="email" id="email" name="email" required
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg text-gray-900 focus:ring-2 focus:ring-aprovaia-accent focus:border-aprovaia-accent placeholder-gray-400 font-medium"
+                            placeholder="✉️ Digite seu melhor e-mail">
+                    </div>
+                    <button type="submit"
+                        class="w-full flex justify-center py-4 px-4 border border-transparent rounded-lg shadow-lg text-lg font-black text-white bg-gradient-to-r from-aprovaia-primary to-aprovaia-accent hover:from-aprovaia-accent hover:to-aprovaia-primary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-aprovaia-primary transition-all duration-300">
+                        📥 QUERO O GUIA AGORA
+                    </button>
+                    <p class="text-xs text-gray-400 mt-3 text-center flex items-center justify-center gap-1">
+                        <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+                        Seus dados estão 100% seguros com a gente.
+                    </p>
+                </form>
+            </div>
+        </div>
+    </header>
+    <section class="py-16 bg-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold">Por que o método tradicional está te reprovando?</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-aprovaia-dark p-6 rounded-lg border border-slate-700">
+                    <div class="text-red-400 text-3xl mb-4">⏳</div>
+                    <h3 class="text-xl font-bold mb-2">Falta de Tempo</h3>
+                    <p class="text-gray-400">Trabalho, trânsito, filhos... Assistir 20 horas de vídeo para uma única matéria é impossível para quem tem uma vida real.</p>
+                </div>
+                <div class="bg-aprovaia-dark p-6 rounded-lg border border-slate-700">
+                    <div class="text-red-400 text-3xl mb-4">🧠</div>
+                    <h3 class="text-xl font-bold mb-2">Branco na Prova</h3>
+                    <p class="text-gray-400">Ler PDFs de 150 páginas cheios de enrolação não cria memória fotográfica. Na hora da prova, os conceitos se misturam.</p>
+                </div>
+                <div class="bg-aprovaia-dark p-6 rounded-lg border border-slate-700">
+                    <div class="text-green-400 text-3xl mb-4">⚡</div>
+                    <h3 class="text-xl font-bold mb-2">A Solução: AprovaIA</h3>
+                    <p class="text-gray-400">A IA filtra o ruído. Entregamos guias com tabelas comparativas e áudios otimizados para você estudar na bicicleta ou lavando a louça.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-aprovaia-dark py-8 text-center text-gray-500 border-t border-slate-800">
+        <p>&copy; 2026 AprovaIA. Todos os direitos reservados.</p>
+        <p class="text-sm mt-2">contato: suporte.aprovaia@gmail.com</p>
+    </footer>
+
+</body>
+</html>
